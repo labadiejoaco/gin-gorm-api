@@ -70,7 +70,7 @@ func CreatePost(c *gin.Context) {
 		// }
 
 		c.JSON(http.StatusBadRequest, gin.H{
-			"error": "Invalid email or password",
+			"error": "Invalid title or body",
 		})
 
 		return
@@ -113,7 +113,7 @@ func UpdatePost(c *gin.Context) {
 		// }
 
 		c.JSON(http.StatusBadRequest, gin.H{
-			"error": "Invalid email or password",
+			"error": "Invalid title or body",
 		})
 
 		return
